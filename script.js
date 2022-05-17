@@ -57,10 +57,10 @@ function setTimer() {
     
         if(timeLeft === 0)
         {
-          clearInterval(timeInterval);
+            clearInterval(timeInterval);
 
-          window.alert("Times Up!");
-          showResult();
+            window.alert("Times Up!");
+            showResult();
         }
 
     }, 1000);
@@ -116,6 +116,8 @@ function showQuestion() {
 function nextQuestion() {
     if(questionCount === questions.length - 1)
     {
+        clearInterval(timeInterval);
+        timer.textContent = "Time: 0"
         showResult();
     }
     else
@@ -129,8 +131,6 @@ function nextQuestion() {
 function showResult(){
     upperBody.textContent = "";
     lowerBody.textContent = "";
-
-    timeLeft = 0;
 
     var title = document.createElement("h1");
     title.textContent = "All done!";
@@ -223,7 +223,6 @@ scoreButton.addEventListener("click", function(event) {
 startButton.addEventListener("click", function(event) {
     event.preventDefault();
     gameStart();
-    setTimer();
 });
 
 
