@@ -2,11 +2,26 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Code Quiz</title>
+        <title>Coding Quiz</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        
+        <header>
+            <a id="toScoreboard" href=""><h1>View High scores</h1></a>
+            <h1 id="timer">Time:</h1>
+        </header>
+
+        <!-- Divided body in two part, upper body for text and lower body for buttons -->
+        <main>
+            <section id="upperBody">
+                <h1>Coding Quiz Challange</h1>
+                <p>Try to answer the following code related questions within the time limit. Keep it mind that incorrect answers will panalize your score/time by ten seconds!</p>
+            </section>
+            <section id="lowerBody">
+                <button id="startButton">Start</button>
+            </section>
+        </main>
+
         <script src="script.js"></script>
     </body>
 </html>
