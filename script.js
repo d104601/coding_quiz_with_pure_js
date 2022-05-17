@@ -46,24 +46,26 @@ function gameStart() {
 
 // function to set timer
 function setTimer() {
-    timeLeft = 5;
+    timeLeft = 100;
     timer.textContent = "Time: " + timeLeft;
 
-    timeInterval = setInterval(interval(), 1000);
-}
+    timeInterval = setInterval(function () {
+        console.log(timeLeft);
+        timeLeft--;
 
-function interval() {
-    console.log(timeLeft);
-    timeLeft--;
-    timer.textContent = "Time: " + timeLeft;
+        timer.textContent = "Time: " + timeLeft;
     
-    if(timeLeft === 0)
-    {
-        clearInterval(timeInterval);
-        window.alert("Times Up!");
-        showResult();
-    }
+        if(timeLeft === 0)
+        {
+          clearInterval(timeInterval);
+
+          window.alert("Times Up!");
+          showResult();
+        }
+
+    }, 1000);
 }
+
 
 // function to show the questions
 function showQuestion() {
