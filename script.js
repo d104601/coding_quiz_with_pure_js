@@ -100,7 +100,7 @@ function showQuestion() {
             else
             {
                 window.alert("Wrong!");
-                var currentTime = document.querySelector()
+                timeLeft -= 10;
             }
             nextQuestion();
         });
