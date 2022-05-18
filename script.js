@@ -50,7 +50,6 @@ function setTimer() {
     timer.textContent = "Time: " + timeLeft;
 
     timeInterval = setInterval(function () {
-        console.log(timeLeft);
         timeLeft--;
 
         timer.textContent = "Time: " + timeLeft;
