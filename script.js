@@ -150,6 +150,7 @@ function showResult(){
     lowerBody.appendChild(form);
 
     var submit = document.createElement("button");
+    submit.setAttribute("id", "submit");
     submit.textContent = "submit";
     lowerBody.appendChild(submit);
 
@@ -172,9 +173,10 @@ function scoreboard() {
     upperBody.appendChild(title);
 
     var board = getScoreBoard();
-    lowerBody.textContent = "";
-    lowerBody.appendChild(board);
+    board.setAttribute("id", "board");
+    upperBody.appendChild(board);
     
+    lowerBody.textContent = "";
     var goBack = document.createElement("button");
     goBack.textContent = "Go Back";
     lowerBody.appendChild(goBack);

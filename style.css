@@ -28,6 +28,19 @@ button:hover {
     background-color: rgb(179, 17, 179);
 }
 
+label {
+    font-size: 200%;
+}
+
+input {
+    width: 200px;
+    height: 70px;
+    text-align: center;
+    font-size: 200%;
+    margin: 8px 0;
+    border-radius: 15px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -61,11 +74,22 @@ section {
 section button {
     margin: 5px;
     font-size: 200%;
+    width: 400px;
     height: 70px;
 }
 
 ul {
     list-style-type: none;
+}
+
+#submit {
+    width: 200px;
+}
+
+#board {
+    font-size: 200%;
+    font: bold;
+    margin: 2%;
 }
 
 @media screen and (max-width: 768px) {
