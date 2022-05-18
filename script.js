@@ -61,7 +61,6 @@ function setTimer() {
             window.alert("Times Up!");
             showResult();
         }
-
     }, 1000);
 }
 
