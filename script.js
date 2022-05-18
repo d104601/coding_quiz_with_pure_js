@@ -163,6 +163,7 @@ function showResult(){
 // function to show scoreboard page
 function scoreboard() {
     clearInterval(timeInterval);
+    timer.textContent = "Time: 0"
 
     var title = document.createElement("h1");
     title.textContent = "Scoreboard";
